@@ -109,11 +109,12 @@ img {
 	margin-right: 50px;
 }
 .contact {
-	display: block;
+	display: flex;
 	padding-top: 32px;
 	padding-bottom: 32px;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
+	align-items: center;
 }
 .header-group {
 	display: flex;
@@ -136,6 +137,14 @@ img {
 }
 .link.current {
 	color: var(--accent-color);
+}
+.contact-icon {
+	fill: var(--text-color);
+	margin-right: 10px;
+}
+.link:hover .contact-icon,
+.link:focus .contact-icon {
+	fill: currentColor;
 }
 
 /* hero */
@@ -196,9 +205,9 @@ img {
 }
 .f-item {
 	width: 270px;
-
-	/* outline: 1px solid orange; */
 }
+
+/* оформлення іконок через псевдоелементи - початок
 .f-item::before {
 	content: "";
 	display: block;
@@ -208,7 +217,7 @@ img {
 	background-repeat: no-repeat;
 	background-color: var(--sec-bg-color);
 	border-radius: 4px;
-	/* outline: 1px solid orange; */
+	
 }
 .icon-antenna::before {
 	background-image: url(../images/icons/antenna-1.png);
@@ -222,8 +231,19 @@ img {
 .icon-astronaut::before {
 	background-image: url(../images/icons/astronaut-1.png);
 }
+оформлення іконок через псевдоелементи - кінець */
+
+.features-thumb {
+	display: flex;
+	width: 270px;
+	height: 120px;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--sec-bg-color);
+	border-radius: 4px;
+}
 .features .title {
-	padding-top: 20px;
+	margin-top: 30px;
 	font-size: 14px;
 	line-height: 1.14;
 	text-transform: uppercase;
@@ -233,7 +253,7 @@ img {
 	line-height: 1.71;
 }
 
-/* wokrk */
+/* work */
 .work {
 	padding-top: 94px;
 	padding-bottom: 94px;
@@ -291,41 +311,7 @@ img {
 	font-size: 16px;
 	line-height: 1.19;
 }
-.socials-list {
-	display: flex;
-	justify-content: center;
-	padding-bottom: 30px;
-}
-.icon {
-	display: block;
-	width: 44px;
-	height: 44px;
-	/* background-color: red; */
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	cursor: pointer;
-	/* outline: 1px solid blue; */
-}
-.icon:not(:last-child) {
-	margin-right: 10px;
-}
-.icon:hover,
-.icon:focus {
-	background-color: var(--accent-color);
-}
-.icon-instagram {
-	background-image: url(../images/icons/insta.png);
-}
-.icon-twitter {
-	background-image: url(../images/icons/twitter.png);
-}
-.icon-facebook {
-	background-image: url(../images/icons/facebook.png);
-}
-.icon-linkedin {
-	background-image: url(../images/icons/linkedin.png);
-}
+
 /* footer */
 
 .footer {
