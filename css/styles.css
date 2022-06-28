@@ -18,6 +18,7 @@ html {
 	--text-color: #757575;
 	--sec-text-color: #212121;
 	--bg-color: #ffffff;
+	--white-text-color: #ffffff;
 	--hero-bg-color: #2f303a;
 	--sec-bg-color: #f5f4fa;
 	--accent-color: #2196f3;
@@ -72,6 +73,18 @@ img {
 .title {
 	color: var(--sec-text-color);
 	font-weight: 700;
+}
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
 
 /* header */
@@ -377,6 +390,13 @@ img {
 	padding-bottom: 60px;
 	background-color: var(--hero-bg-color);
 }
+.down-info {
+	display: flex;
+	align-items: baseline;
+}
+.adrress-part {
+	margin-right: 70px;
+}
 .adr-item:not(:last-child) {
 	margin-bottom: 9px;
 }
@@ -393,11 +413,38 @@ img {
 	/* outline: 1px solid orange; */
 }
 .adr-link {
-	color: #ffffff;
+	color: var(--white-text-color);
 }
 .cont-link {
 	color: rgba(255, 255, 255, 0.6);
 }
+
+.footer-subtitle {
+	font-weight: 700;
+	line-height: 1.14;
+	color: var(--white-text-color);
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+.socials-f-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 44px;
+	height: 44px;
+	color: #ffffff;
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 50%;
+}
+.socials-f-link:hover,
+.socials-f-link:focus {
+	background-color: var(--accent-color);
+	color: #ffffff;
+}
+/* .socials-icon {
+	fill: currentColor;
+} */
 
 /* portfolio styles */
 .portfolio {
@@ -425,14 +472,20 @@ img {
 	cursor: pointer;
 	text-align: center;
 }
+.button:hover,
+.button:focus {
+	background-color: var(--accent-color);
+	color: var(--white-text-color);
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 .l-btn:not(:last-child) {
 	margin-right: 8px;
 }
-.active-button {
+/* .active-button {
 	color: #ffffff;
 	background-color: var(--accent-color);
 	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
+} */
 
 /* project styles */
 .projects-list {
@@ -443,6 +496,13 @@ img {
 .project {
 	width: 370px;
 	margin: 15px;
+}
+.project-link {
+	display: block;
+}
+.project-link:hover,
+.project-link:focus {
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .project-descr {
 	padding-top: 20px;
