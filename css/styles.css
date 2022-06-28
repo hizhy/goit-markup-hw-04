@@ -21,6 +21,7 @@ html {
 	--hero-bg-color: #2f303a;
 	--sec-bg-color: #f5f4fa;
 	--accent-color: #2196f3;
+	--icon-fill-one: #afb1b8;
 }
 body {
 	/* margin: 0; */
@@ -54,9 +55,6 @@ img {
 	padding-right: 15px;
 	margin-left: auto;
 	margin-right: auto;
-	/* margin-bottom: 94px; */
-
-	/* outline: 1px solid red; */
 }
 .list {
 	margin: 0;
@@ -297,7 +295,7 @@ img {
 }
 .team-descr {
 	padding-top: 30px;
-	padding-bottom: 16px;
+	padding-bottom: 30px;
 	text-align: center;
 }
 .t-item-title {
@@ -310,6 +308,66 @@ img {
 .t-text {
 	font-size: 16px;
 	line-height: 1.19;
+	margin-bottom: 16px;
+}
+.socials {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+.socials-item {
+}
+.socials-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 44px;
+	height: 44px;
+	color: var(--icon-fill-one);
+	border-radius: 50%;
+}
+.socials-link:hover,
+.socials-link:focus {
+	color: #ffffff;
+	background-color: var(--accent-color);
+}
+.socials-icon {
+	fill: currentColor;
+}
+
+/* clients */
+
+.clients {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+.clients .title {
+	font-size: 36px;
+	line-height: 1.17;
+	text-align: center;
+	margin-bottom: 50px;
+}
+.clients-list {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+}
+.c-link {
+	display: flex;
+	width: 170px;
+	height: 92px;
+	justify-content: center;
+	align-items: center;
+	color: var(--icon-fill-one);
+	border: 1px solid var(--icon-fill-one);
+	border-radius: 4px;
+}
+.c-icon {
+	fill: currentColor;
+}
+.c-link:hover {
+	color: var(--accent-color);
+	border: 1px solid var(--accent-color);
 }
 
 /* footer */
